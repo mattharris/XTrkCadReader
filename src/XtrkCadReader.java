@@ -1,5 +1,15 @@
 //  XtrkCadReader.java
 
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Vector;
+
 /**
  * Utility program
  * Converts  layout schemes produced by the Open Source
@@ -19,9 +29,6 @@
  *  2012-May-10     MST- Preserve turnoutname for curved turnouts, handle missing title 
  *  2013-Jan-14     MST- Change defaults regarding turnout appearance 
  */
-import java.util.*;
-import java.io.*;
-
 public class XtrkCadReader {
 
     // Some output costants
